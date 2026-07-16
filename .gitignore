@@ -1,0 +1,35 @@
+# Zugangsdaten
+token.json
+client_secret*.json
+**/token.json
+**/client_secret*.json
+
+# Laufzeitdaten und private Chatdaten
+data/
+logs/
+reports/
+backups/
+*.jsonl
+simulation_result.json
+auto_live_status.json
+*.pid
+watcher_stdout.txt
+watcher_stderr.txt
+CHATWAECHTER_STARTFEHLER.txt
+
+# Python und lokale Bibliotheken
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+lib/
+
+# Sicherungen und lokale Prüfunterlagen
+SICHERUNG_*/
+Neuer Ordner/
+
+# Betriebssystem und Editoren
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
