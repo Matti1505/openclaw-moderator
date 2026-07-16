@@ -1,0 +1,197 @@
+﻿{
+    "mode":  "active_moderation",
+    "exempt_owner":  true,
+    "exempt_moderators":  true,
+    "emoji_rule_enabled":  false,
+    "duplicate_message":  {
+                              "enabled":  false,
+                              "count":  4,
+                              "window_seconds":  90,
+                              "action":  "flag"
+                          },
+    "message_flood":  {
+                          "enabled":  false,
+                          "count":  6,
+                          "window_seconds":  12,
+                          "action":  "timeout_300"
+                      },
+    "uppercase":  {
+                      "enabled":  true,
+                      "min_letters":  12,
+                      "min_ratio":  0.8,
+                      "action":  "delete"
+                  },
+    "repeated_characters":  {
+                                "enabled":  false,
+                                "minimum_run":  6,
+                                "action":  "flag"
+                            },
+    "links":  {
+                  "enabled":  false,
+                  "action":  "timeout_1800"
+              },
+    "blocked_terms":  {
+                          "enabled":  false,
+                          "action":  "timeout_1800",
+                          "terms":  [
+                                        "sub4sub",
+                                        "buy followers",
+                                        "kostenlose follower",
+                                        "telegram.me/",
+                                        "t.me/",
+                                        "wa.me/",
+                                        "crypto giveaway",
+                                        "investment opportunity",
+                                        "verdiene schnell geld",
+                                        "schnell reich",
+                                        "click my profile"
+                                    ]
+                      },
+    "insults":  {
+                    "enabled":  true,
+                    "action":  "delete",
+                    "terms":  [
+                                  "arschloch",
+                                  "hurensohn",
+                                  "wichser",
+                                  "missgeburt",
+                                  "drecksau",
+                                  "fotze",
+                                  "schlampe",
+                                  "bastard",
+                                  "vollidiot",
+                                  "dummkopf",
+                                  "halt die fresse",
+                                  "verpiss dich",
+                                  "fick dich"
+                              ]
+                },
+    "emoji_rule":  {
+                       "enabled":  false,
+                       "max_count":  10,
+                       "action":  "flag"
+                   },
+    "advanced":  {
+                     "multiple_links":  {
+                                            "enabled":  false,
+                                            "count":  2,
+                                            "action":  "timeout_1800"
+                                        },
+                     "advertising":  {
+                                         "enabled":  false,
+                                         "action":  "timeout_1800",
+                                         "terms":  [
+                                                       "abonniert meinen kanal",
+                                                       "folgt mir",
+                                                       "schreibt mir privat",
+                                                       "link in meinem profil"
+                                                   ]
+                                     },
+                     "contact_data":  {
+                                          "enabled":  false,
+                                          "action":  "flag"
+                                      },
+                     "fraud":  {
+                                   "enabled":  false,
+                                   "action":  "timeout_1800",
+                                   "terms":  [
+                                                 "gratis krypto",
+                                                 "crypto giveaway",
+                                                 "garantierte rendite",
+                                                 "investment opportunity",
+                                                 "youtube support",
+                                                 "youtube mitarbeiter"
+                                             ]
+                               },
+                     "mentions":  {
+                                      "enabled":  false,
+                                      "count":  4,
+                                      "action":  "timeout_300"
+                                  },
+                     "long_message":  {
+                                          "enabled":  false,
+                                          "max_characters":  500,
+                                          "action":  "flag"
+                                      },
+                     "multiline":  {
+                                       "enabled":  false,
+                                       "max_lines":  5,
+                                       "action":  "flag"
+                                   },
+                     "near_duplicate":  {
+                                            "enabled":  false,
+                                            "ratio":  0.9,
+                                            "action":  "flag"
+                                        },
+                     "private_data":  {
+                                          "enabled":  false,
+                                          "action":  "delete"
+                                      },
+                     "threats":  {
+                                     "enabled":  false,
+                                     "action":  "timeout_1800",
+                                     "terms":  [
+                                                   "ich bring dich um",
+                                                   "ich töte dich",
+                                                   "du wirst sterben"
+                                               ]
+                                 },
+                     "hate_speech":  {
+                                         "enabled":  false,
+                                         "action":  "block",
+                                         "terms":  [
+
+                                                   ]
+                                     },
+                     "sexual_content":  {
+                                            "enabled":  false,
+                                            "action":  "timeout_1800",
+                                            "terms":  [
+
+                                                      ]
+                                        },
+                     "spoilers":  {
+                                      "enabled":  false,
+                                      "action":  "flag",
+                                      "terms":  [
+
+                                                ]
+                                  },
+                     "topic_filter":  {
+                                          "enabled":  false,
+                                          "action":  "flag",
+                                          "terms":  [
+
+                                                    ]
+                                      },
+                     "foreign_language":  {
+                                              "enabled":  false,
+                                              "action":  "flag",
+                                              "terms":  [
+
+                                                        ]
+                                          },
+                     "trusted_users":  [
+
+                                       ],
+                     "repeat_offender":  {
+                                             "enabled":  false,
+                                             "expiry_seconds":  21600,
+                                             "steps":  [
+                                                           "flag",
+                                                           "timeout_300",
+                                                           "timeout_1800",
+                                                           "block"
+                                                       ]
+                                         },
+                     "spam_wave":  {
+                                       "enabled":  false,
+                                       "count":  10,
+                                       "window_seconds":  30,
+                                       "action":  "timeout_1800"
+                                   }
+                 },
+    "custom_rules":  [
+
+                     ]
+}
